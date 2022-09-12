@@ -1,0 +1,56 @@
+* {
+    font-family: "Lucida Sans", Arial, sans-serif;
+    color: rgb(79, 79, 79);
+}
+
+#review-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 200px;
+    height: 290px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    opacity: 0.3;
+    transform: scale(0.8, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+.active {
+    transform: scale(1, 1);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.card p {
+    padding: 0 20px;
+}
+
+.card .image-container {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    overflow: hidden;
+}
+
+.card .image-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.card .name-container {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(231, 208, 253);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
